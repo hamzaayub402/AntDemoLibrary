@@ -19,4 +19,9 @@ public class RNAntDemoLibraryModule extends ReactContextBaseJavaModule {
   public String getName() {
     return "RNAntDemoLibrary";
   }
+
+  @ReactMethod
+  public void logMethod () {
+    Log.d("HTAG", "This is Test Method in Native ");
+  }
 }
